@@ -1,0 +1,18 @@
+<mat-card>
+    <mat-card-header>
+        <mat-card-title>{{movie.name}}</mat-card-title>
+        <mat-card-subtitle>{{movie.genre}} ({{movie.year}})</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image src="{{movie.image}}" alt="Image">
+    <mat-card-content>
+        <p>
+            {{movie.description}}
+            <br>
+            {{movie.director}}
+        </p>
+    </mat-card-content>
+    <mat-card-actions>
+        <button mat-button>COMPRAR</button>
+        <button mat-button>ALUGAR</button>
+    </mat-card-actions>
+</mat-card>

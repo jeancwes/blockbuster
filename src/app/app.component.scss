@@ -1,0 +1,11 @@
+.app {
+    height: 100vh;
+}
+
+.app-drawer {
+    width: 200px;
+}
+
+.app-drawer-content {
+    width: calc( 100% - 200px );
+}
