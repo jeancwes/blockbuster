@@ -1,11 +1,21 @@
 .app {
-    height: 100vh;
+    height: calc( 100vh - 64px );
 }
 
 .app-drawer {
     width: 200px;
 }
 
+.app-link {
+    color: #fff;
+    width: 214px;
+}
+
+.app-link:hover {
+    text-decoration: none;
+}
+
 .app-drawer-content {
+    padding: 20px;
     width: calc( 100% - 200px );
 }

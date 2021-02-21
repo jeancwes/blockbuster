@@ -1,5 +1,5 @@
 <ul class="movies">
-    <li class="movie" *ngFor="let movie of movies" (click)="view()">
+    <li class="movie" *ngFor="let movie of movies">
         <app-movie [movie]="movie"></app-movie>
     </li>
 </ul>

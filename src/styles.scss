@@ -1,4 +1,43 @@
-/* You can add global styles to this file, and also import other style files */
+html,
+body {
+  height: 100%;
+}
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body {
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  margin: 0;
+  overflow-y: hidden;
+}
+
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.mat-card {
+  padding: 10px;
+}
+
+.mat-card-header {
+  margin-bottom: 8px !important;
+}
+
+.mat-card-header .mat-card-title {
+  font-size: 16px;
+}
+
+.mat-card-header-text {
+  margin: 0 !important;
+}
+
+.mat-card-subtitle {
+  font-size: 14px;
+}
+
+.mat-card-content {
+  margin-bottom: 0 !important;
+}
+
+.mat-list-base {
+  padding-top: 30px !important;
+}

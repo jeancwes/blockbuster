@@ -1,0 +1,52 @@
+[
+    {
+        "id": "1",
+        "name": "Cobain: Montage of Heck",
+        "year": "2015",
+        "director": "Brett Morgen",
+        "category": "Documentário",
+        "description": "Conheça a vida do lendário vocalista da banda Nirvana, Kurt Cobain...",
+        "synopsis": "Aclamado como um dos documentários mais inovadores e íntimos de todos os tempos, veja Kurt Cobain como nunca antes no único retrato totalmente autorizado do famoso ícone da música. O cineasta nomeado para o Oscar®, Brett Morgen, combina arquivos pessoais artísticos e musicais de Cobain, vídeos inéditos, animações e entrevistas reveladoras da família e amigos íntimos. Incrivelmente criativo e muito aclamado, acompanhe Kurt desde seus primeiros anos nesta visão cinematográfica profunda e detalhada de um artista em conflito com seu entorno.  Os fãs e aqueles da geração Nirvana descobrirão coisas inéditas sobre Cobain, enquanto aqueles que recentemente descobriram o homem e sua música saberão o que faz dele o ícone duradouro que é até hoje.",
+        "image": "../../../assets/images/movieposter-1.webp"
+    },
+    {
+        "id": "2",
+        "name": "Perdido em Marte",
+        "year": "2015",
+        "director": "Ridley Scott",
+        "category": "Ficção",
+        "description": "O astronauta Mark Watney é enviado a uma missão para Marte, mas...",
+        "synopsis": "Durante uma missão a Marte, o astronauta Mark Watney (Matt Damon) é dado como morto após uma feroz tempestade e é deixado para trás por sua tripulação. Mas Watney sobrevive e encontra-se sem recursos e sozinho no planeta hostil. Apenas com suprimentos escassos, Watney deve contar com a sua criatividade, engenho e espírito para subsistir e encontrar uma maneira de sinalizar à Terra que está vivo. A milhões de quilômetros de distância, a NASA e uma equipe de cientistas internacionais trabalham incansavelmente para trazer 'o marciano' de volta enquanto seus colegas de tripulação simultaneamente traçam uma ousada, se não impossível, missão de resgate. Conforme essas histórias de incrível bravura se desdobram, o mundo se une para torcer pelo retorno seguro de Watney. Baseado no best-seller homônimo e dirigido pelo diretor Ridley Scott, Perdido Em Marte conta com um elenco repleto de estrelas que inclui Jessica Chastain, Kristen Wiig, Kate Mara, Michael Pena, Jeff Daniels, Chiwetel Ejiofor e Donald Glover.",
+        "image": "../../../assets/images/movieposter-2.webp"
+    },
+    {
+        "id": "3",
+        "name": "A Cabana",
+        "year": "2017",
+        "director": "Stuart Hazeldine",
+        "category": "Drama",
+        "description": "Um homem vive atormentado após perder a sua filha mais nova...",
+        "synopsis": "Durante uma viagem de fim de semana, a filha mais nova de Mack Allen Phillips é raptada e evidências de que ela foi brutalmente assassinada são encontradas numa velha cabana. Após quatro anos vivendo numa tristeza profunda causada pela culpa e pela saudade da menina, Mack recebe um estranho bilhete, aparentemente escrito por Deus, convidando-o a voltar à cabana onde acontecera a tragédia. Apesar de desconfiado, ele vai ao local numa tarde de inverno e adentra passo a passo o cenário de seu mais terrível pesadelo. Mas o que ele encontra lá muda o seu destino para sempre. Em um mundo cruel e injusto, A cabana levanta um questionamento atemporal: se Deus é tão poderoso, por que não faz nada para amenizar nosso sofrimento? As respostas que Mack encontra vão surpreender você e podem transformar sua vida de maneira tão profunda quanto transformaram a dele. Você vai querer partilhar esse livro com todas as pessoas que ama.",
+        "image": "../../../assets/images/movieposter-3.webp"
+    },
+    {
+        "id": "4",
+        "name": "Uma Mente Brilhante",
+        "year": "2001",
+        "director": "Ron Howard",
+        "category": "Drama",
+        "description": "John Forbes Nash Jr. é reconhecido como gênio da matemática...",
+        "synopsis": "John Nash (Russell Crowe) é um gênio da matemática que, aos 21 anos, formulou um teorema que provou sua genialidade e o tornou aclamado no meio onde atuava. Mas aos poucos o belo e arrogante Nash se transforma em um sofrido e atormentado homem, que chega até mesmo a ser diagnosticado como esquizofrênico pelos médicos que o tratam. Porém, após anos de luta para se recuperar, ele consegue retornar à sociedade e acaba sendo premiado com o Nobel.",
+        "image": "../../../assets/images/movieposter-4.webp"
+    },
+    {
+        "id": "5",
+        "name": "Pearl Harbor",
+        "year": "2001",
+        "director": "Michael Bay",
+        "category": "Ação e Aventura",
+        "description": "Dois pilotos e amigos de longa data se apaixonam pela mesma mulher...",
+        "synopsis": "Pouco antes do bombardeio japonês em Pearl Harbor, dois amigos que são como irmãos um para o outro se envolvem de maneira distinta nos eventos que fazem com que os Estados Unidos entrem na 2ª Guerra Mundial. Enquanto que Rafe (Ben Affleck) se apaixona pela enfermeira Evelyn (Kate Beckinsale) e decide se alistar na força americana que lutará na 2ª Guerra Mundial, em Londres, Danny (Josh Hartnett) torna-se piloto da Força Aérea dos Estados Unidos e permanece no país. Após a notícia de que Rafe morrera em um dos combates que travava contra os alemães, Danny e Evelyn se aproximam e terminam se apaixonando.",
+        "image": "../../../assets/images/movieposter-5.webp"
+    }
+]

@@ -1,7 +1,14 @@
 <div class="container-fluid">
+  <mat-toolbar color="primary">
+    <a class="app-link"
+      [routerLink]="['/']">
+      {{title}}
+    </a>
+    <app-search></app-search>
+  </mat-toolbar>
   <mat-drawer-container class="app">
     <mat-drawer class="app-drawer" mode="side" opened>
-      
+      <app-categories></app-categories>
     </mat-drawer>
     <mat-drawer-content class="app-drawer-content">
       <router-outlet></router-outlet>

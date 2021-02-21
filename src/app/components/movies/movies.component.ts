@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Subscription } from 'rxjs';
+import { AppService } from 'src/app/app.service';
 
 @Component({
   selector: 'app-movies',
@@ -7,56 +9,32 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MoviesComponent implements OnInit {
 
-  movies = [
-    {
-      name: 'movie 1',
-      year: '2020',
-      director: 'director 1',
-      genre: 'genre 1',
-      description: 'description 1',
-      image: ''
-    },
-    {
-      name: 'movie 2',
-      year: '2020',
-      director: 'director 2',
-      genre: 'genre 2',
-      description: 'description 2',
-      image: ''
-    },
-    {
-      name: 'movie 3',
-      year: '2020',
-      director: 'director 3',
-      genre: 'genre 3',
-      description: 'description 3',
-      image: ''
-    },
-    {
-      name: 'movie 4',
-      year: '2020',
-      director: 'director 4',
-      genre: 'genre 4',
-      description: 'description 4',
-      image: ''
-    },
-    {
-      name: 'movie 5',
-      year: '2020',
-      director: 'director 5',
-      genre: 'genre 5',
-      description: 'description 5',
-      image: ''
-    },
-  ];
+  categoriesSubscription: Subscription;
 
-  constructor() { }
+  movies: any[];
+
+  constructor(private _appService: AppService) { }
 
   ngOnInit(): void {
+    this.movies = this._appService.getMovies();
+    this.categoriesSubscription = this._appService.getCategory()
+      .subscribe(category => {
+        this.movies = this._filter(category);
+      });
   }
 
-  view() {
-
+  ngOnDestroy() {
+    if (this.categoriesSubscription)
+      this.categoriesSubscription.unsubscribe();
+  }
+  
+  private _filter(category: string): any[] {
+    if (category == 'Todos os Filmes') {
+      return this._appService.getMovies();
+    }
+    const filterValue = category.toLowerCase();
+    return this._appService.getMovies()
+      .filter(movie => movie.category.toLowerCase().includes(filterValue));
   }
 
 }

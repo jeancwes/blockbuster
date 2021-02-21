@@ -1,0 +1,18 @@
+<mat-selection-list #categories [multiple]="false" 
+    *ngIf="router.isActive('/', true)">
+    <mat-list-option 
+        *ngFor="let category of movieCategories; let cIndex = index;" 
+        [value]="category"
+        [selected]="cIndex == 0"
+        (click)="changeCategory(category)">
+        {{category}}
+    </mat-list-option>
+</mat-selection-list>
+<mat-selection-list #back [multiple]="false" 
+    *ngIf="router.isActive('/watch', false)">
+    <mat-list-option [selected]="true"
+        [routerLink]="['/']">
+        <mat-icon mat-list-icon>arrow_back</mat-icon> 
+        Voltar
+    </mat-list-option>
+</mat-selection-list>

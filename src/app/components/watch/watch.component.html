@@ -1,0 +1,68 @@
+<mat-card class="watch" *ngIf="movie">
+    <mat-card-header class="watch-header">
+        <mat-card-title>{{movie.name}}</mat-card-title>
+        <mat-card-subtitle>{{movie.category}} ({{movie.year}})</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content class="watch-content">
+        <div class="row">
+            <div class="col-xs-12 col-md-3">
+                <img mat-card-image src="{{movie.image}}" alt="Image">
+            </div>
+            <div class="col-xs-12 col-md-5">
+                <h1 mat-h1>{{movie.name}}</h1>
+                <p class="text-justify">{{movie.synopsis}}</p>
+            </div>
+            <div class="col-xs-12 col-md-4">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <button mat-button color="primary">
+                            <mat-icon>playlist_add</mat-icon>
+                            COMPRAR
+                        </button>
+                        <!-- <strong> ou </strong> -->
+                        <button mat-button color="primary">
+                            <mat-icon>playlist_play</mat-icon>
+                            ALUGAR
+                        </button>
+                        <button mat-button color="accent" class="my-3">
+                            <mat-icon>favorite</mat-icon>
+                            ADICIONAR AOS FAVORITOS
+                        </button>
+                    </div>
+                    <div class="col-12">
+                        <div class="table-responsive">
+                            <table class="table table-borderless">
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <span class="float-right font-weight-bold">Ano</span>
+                                        </td>
+                                        <td>{{movie.year}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="float-right font-weight-bold">Direção</span>
+                                        </td>
+                                        <td>{{movie.director}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="float-right font-weight-bold">Categoria</span>
+                                        </td>
+                                        <td>{{movie.category}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="float-right font-weight-bold">Qualidade</span>
+                                        </td>
+                                        <td>2160p (4K)</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </mat-card-content>
+</mat-card>
