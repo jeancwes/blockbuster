@@ -12,6 +12,8 @@ Após instalar, acessar a pasta do projeto e executar os seguintes comandos.
 
 $ npm install
 
+$ npm install -g @angular/cli
+
 $ ng serve --open
 
 A aplicação ficará disponível na url base https://localhost:4200
