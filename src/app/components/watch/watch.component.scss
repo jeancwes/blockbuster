@@ -1,3 +1,9 @@
 .watch {
     margin: 10px;
 }
+
+@media (max-width: 576px) {
+    .watch {
+        margin-bottom: 65px;
+    }
+}

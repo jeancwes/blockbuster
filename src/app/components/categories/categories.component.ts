@@ -21,11 +21,6 @@ export class CategoriesComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  ngAfterViewInit() {
-    console.log(this.router);
-    console.log(this.categories);
-  }
-
   changeCategory(category: string) {
     this._appService.changeCategory(category);
   }

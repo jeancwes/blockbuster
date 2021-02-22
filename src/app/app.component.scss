@@ -2,20 +2,54 @@
     height: calc( 100vh - 64px );
 }
 
+.app-toolbar {
+    width: 100%;
+}
+
+.app-toolbar__nav {
+    width: 214px;
+}
+
 .app-drawer {
     width: 200px;
 }
 
-.app-link {
-    color: #fff;
-    width: 214px;
+.app-toolbar__nav-button {
+    margin-right: 10px;
+    margin-top: 10px;
 }
 
-.app-link:hover {
+.app-toolbar__nav-link {
+    color: #fff;
+}
+
+.app-toolbar__nav-link:hover {
     text-decoration: none;
 }
 
 .app-drawer-content {
     padding: 20px;
     width: calc( 100% - 200px );
+}
+
+@media (max-width: 576px) {
+    .app-toolbar {
+        display: block;
+        height: 118px;
+    }
+
+    .app-toolbar__nav {
+        display: flex;
+        height: 64px;
+        line-height: 64px;
+        vertical-align: middle;
+    }
+
+    .app-drawer {
+        width: 100%;
+    }
+
+    .app-drawer-content {
+        width: 100%;
+    }
 }
