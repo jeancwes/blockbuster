@@ -20,4 +20,11 @@ export class AppComponent {
     };
   }
 
+  isMobile() {
+    if (this.screenWidth <= 576) {
+      return true;
+    }
+    return false;
+  }
+
 }

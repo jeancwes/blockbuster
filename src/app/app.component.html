@@ -3,13 +3,13 @@
     <div class="app-toolbar__nav">
       <button class="app-toolbar__nav-button" mat-icon-button 
         *ngIf="router.isActive('/', true)"
-        [ngStyle]="{'display' : (screenWidth > 576) ? 'none' : 'block'}"
+        [ngStyle]="{'display': (isMobile()) ? 'block' : 'none'}"
         (click)="drawer.toggle()">
           <mat-icon>menu</mat-icon>
       </button>
       <button class="app-toolbar__nav-button" mat-icon-button 
         *ngIf="router.isActive('/watch', false)"
-        [ngStyle]="{'display' : (screenWidth > 576) ? 'none' : 'block'}"
+        [ngStyle]="{'display': (isMobile()) ? 'block' : 'none'}"
         [routerLink]="['/']">
           <mat-icon>arrow_back</mat-icon>
       </button>
@@ -22,9 +22,9 @@
   </mat-toolbar>
   <mat-drawer-container class="app">
     <mat-drawer class="app-drawer" #drawer
-      [opened]="screenWidth > 576" 
-      [mode]="(screenWidth > 576) ? 'side' : 'over'">
-      <app-categories></app-categories>
+      [opened]="!isMobile()" 
+      [mode]="(isMobile()) ? 'over' : 'side'">
+      <app-categories [drawer]="drawer" [isMobile]="isMobile()"></app-categories>
     </mat-drawer>
     <mat-drawer-content class="app-drawer-content">
       <router-outlet></router-outlet>

@@ -1,4 +1,5 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, Input, OnInit, ViewChild } from '@angular/core';
+import { MatDrawer } from '@angular/material/sidenav';
 import { Router } from '@angular/router';
 import { AppService } from 'src/app/app.service';
 import categories from '../../categories.json';
@@ -10,6 +11,8 @@ import categories from '../../categories.json';
 })
 export class CategoriesComponent implements OnInit {
 
+  @Input() drawer: MatDrawer;
+  @Input() isMobile: boolean;
   @ViewChild('categories') categories; 
 
   movieCategories: string[] = categories;
@@ -23,6 +26,9 @@ export class CategoriesComponent implements OnInit {
 
   changeCategory(category: string) {
     this._appService.changeCategory(category);
+    if (this.isMobile) {
+      this.drawer.toggle();
+    }
   }
 
 }

@@ -1,6 +1,8 @@
 <mat-card class="watch" *ngIf="movie">
     <mat-card-header class="watch-header">
-        <mat-card-title>{{movie.name}}</mat-card-title>
+        <mat-card-title>
+            <h2 mat-2>{{movie.name}}</h2>
+        </mat-card-title>
         <mat-card-subtitle>{{movie.category}} ({{movie.year}})</mat-card-subtitle>
     </mat-card-header>
     <mat-card-content class="watch-content">
@@ -9,7 +11,7 @@
                 <img mat-card-image src="{{movie.image}}" alt="Image">
             </div>
             <div class="col-xs-12 col-md-5">
-                <h1 mat-h1>{{movie.name}}</h1>
+                <h2 mat-h2>Sinopse</h2>
                 <p class="text-justify">{{movie.synopsis}}</p>
             </div>
             <div class="col-xs-12 col-md-4">
